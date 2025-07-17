@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "waifu"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Kadlcik <frostyx@email.cz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+openai = "^1.97.0"
+dotenv = "^0.9.9"
+elevenlabs = "^2.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
