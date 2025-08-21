@@ -5,9 +5,11 @@ What shall we do today?
 import os
 import sys
 import json
+import yaml
 import random
 import argparse
 import subprocess
+from dataclasses import dataclass
 from dotenv import load_dotenv
 from openai import OpenAI
 import elevenlabs
@@ -68,6 +70,13 @@ class Waifu:
             "Say this like love me."
         )
         self.speed = 1.0
+
+
+@dataclass
+class Custom:
+    elevenlabs_voice_id: str
+    personality: str
+    speed: float
 
 
 def gh_issues(project: str, assignee: str) -> dict:
@@ -157,6 +166,14 @@ def main() -> None:
             character = Sergeant()
         case "waifu":
             character = Waifu()
+        case _ if args.character.endswith(".yaml"):
+            try:
+                with open(args.character) as fp:
+                    data = yaml.safe_load(fp)
+                character = Custom(**data)
+            except (OSError, TypeError, yaml.YAMLError) as ex:
+                print("Failed to load custom character:\n{0}".format(ex))
+                sys.exit(1)
         case _:
             print("Unsupported character, see project readme")
             sys.exit(1)

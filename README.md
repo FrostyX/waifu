@@ -26,6 +26,7 @@ poetry run python3 main.py \
 - `cowboy` - Watched Yellowstone once ...
 - `waifu` - I know you want this option, you absolute degenerate
 - `random` - Randomly choose one of the previous characters
+- `*.yaml` - Define a YAML file with your custom character
 
 
 ## Configuration
