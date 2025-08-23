@@ -46,3 +46,11 @@ provider. Ideally local ones, so this can be used for private issues.
 
 At this moment, GitHub is the only supported issue tracker, but the goal is to
 support JIRA as well.
+
+
+## Security
+
+Is this safe? Until we implement support for local models, we rely on ChatGPT
+and ElevenLabs to process our data. Irrespective of their policies, I am
+discouraging you from using this tool on any sensitive data. I implore you to
+use it on public issues only.
