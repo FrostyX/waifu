@@ -64,7 +64,7 @@ class Waifu:
         # Ivanna - 4NejU5DwQjevnR6mh3mb
         # Gigi - jBpfuIE2acCO8z3wKNLl
         # Nicole - piTKgcLEGmPE4e6mEKli
-        self.elevenlabs_voice_id = "MF3mGyEYCl7XYWbV9V6O"
+        self.elevenlabs_voice_id = "jBpfuIE2acCO8z3wKNLl"
         self.personality = (
             "Say this while flirting with me in an anime waifu tone. "
             "Say this like love me."
