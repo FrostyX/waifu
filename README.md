@@ -9,6 +9,12 @@ functionality to read them out loud.
 To make this more fun, it features various characters with different
 personalities and voices.
 
+## Demo
+
+I am using AI my a daily life and it's ...
+
+[![Demo](https://i1.ytimg.com/vi/du3PFxm0fIw/maxresdefault.jpg)](https://www.youtube.com/watch?v=du3PFxm0fIw)
+
 
 ## Usage
 
